@@ -5,10 +5,10 @@
     "type": "module",
     "scripts": {
         "dev": "remix dev",
-        "build": "remix vite:build",
+        "build": "remix build",
         "lint": "eslint .",
         "preview": "vite preview",
-        "start": "remix-serve build/index.js"
+        "start": "remix-serve build"
     },
     "dependencies": {
         "@remix-run/dev": "^2.15.3",
