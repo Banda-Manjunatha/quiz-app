@@ -1,10 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// Import `remixVitePlugin` from CommonJS
+// Import default from @remix-run/dev
 import remixDev from "@remix-run/dev";
-const remixVitePlugin = remixDev.remixVitePlugin;
 
 export default defineConfig({
-    plugins: [react(), remixVitePlugin()],
+    plugins: [react(), remixDev.remixVitePlugin()],
 });
